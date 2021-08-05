@@ -1,0 +1,250 @@
+/* Popins font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* common styles and utilities */
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                                Header Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+header {
+    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 150px 140px 130px 140px;
+}
+.heading > h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+}
+.heading > button{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    margin-top: 27px;
+
+}
+.heading button .fas{
+    padding-left: 10px;
+}
+.heading > button:hover{
+    background-color: #e66494;
+    border: 0.5px solid #941d48;
+}
+
+.banner img{
+    width: 555px;
+    transition: all 1s;
+}
+.banner img:hover{
+    transform: skewX(-30deg);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                                Player Card Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+.player-container{
+    margin: 70px 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.players-card{
+    background-color: #FFFFFF;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players-card:hover{
+    border: 1px solid lightgray;
+}
+.players-card img{
+    width: 300px;
+    
+}
+.players-card > h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin-top: 16px;
+}
+.players-card > p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                               partner section Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+.partners{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.partners img{
+    width: 150px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                               Cup section Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+.glory{
+    margin: 30px 180px;
+    text-align: center;
+}
+.glory > h3{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    color: #2D25A0;
+    text-transform: uppercase;
+}
+.cup-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.cup{
+    position: relative;
+    border: 0.01px solid transparent;
+    overflow: hidden;
+}
+.cup-card .cup img{
+    width: 300px;
+    transition: all 1s;
+}
+.cup-card .cup img:hover{
+    transform: scale(1.2);
+}
+.cup-card > h4{
+    font-size: 20px;
+    margin-top: 10px;
+    color:#18191F;
+}
+.highlight{
+    color: goldenrod;
+}
+.cup-card > p{
+    color:#6C6C6C;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                                footer Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+    text-align: center;
+    padding: 100px 0;
+}
+footer img{
+    width: 480px;
+}
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    grid-gap: 14px;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    color: #969BAB;
+    font-size: 12px;
+    background-color: #dfdfdf;
+    padding: 10px 8px;
+    border-radius: 16px;
+}
+footer p{
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                                Responsive Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Tab devices */
+@media only screen and (max-width: 992px){
+    
+    /* header */
+    header {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 50px 30px 50px;
+        text-align: center;
+    }
+    .heading > h1 {
+        font-size: 50px;
+    }
+    .heading > button{
+        padding: 10px 20px;
+    }
+    .banner img{
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    /* players */
+    .player-container{
+        margin: 70px 75px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    /* partners */
+    .partners{
+        grid-template-columns: repeat(3,50px);
+        grid-gap: 15px;
+        padding: 30px 0;
+    }
+    .partners img{
+        width: 50px;
+    }
+    /* glory */
+    .glory{
+        margin: 30px 30px;
+        text-align: center;
+    }
+    .cup-card-container{
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    /* footer */
+    footer img{
+        width: 300px;
+    }
+}
+
+/* mobile devices */
+@media only screen and (max-width: 688px){
+    /* players */
+    .player-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* glory */
+    .cup-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    /* footer */
+    footer img{
+        width: 300px;
+    }
+}
