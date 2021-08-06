@@ -144,7 +144,55 @@ header {
     margin-top: 10px;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------
+                                                Join the club Styles
+------------------------------------------------------------------------------------------------------------------------------ */
+.join-club{
+    height: 45vh;
+    background-image: linear-gradient(to right bottom,rgba(28, 217, 211, 0.808), rgba(147, 237, 199, 0.801)), url(../images/cups/background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join-club > h1{
+    color: blue;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 
+}
+.join-club > h5{
+    color: rgb(3, 1, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.subscribe input{
+    text-decoration: none;
+    border: none;
+    height: 20px;
+    padding: 5px 10px;
+    background-color: rgb(236, 236, 236);
+}
+.subscribe input:focus{
+    border: 1px solid blue;
+    outline: 0;
+}
+.subscribe button{
+    padding: 7px 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    text-transform: uppercase;
+}
+.subscribe button:hover{
+    color:blue;
+    background-color: rgb(179, 179, 248);
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------
